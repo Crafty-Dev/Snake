@@ -1,5 +1,6 @@
 package de.crafty.snake;
 
+import de.crafty.snake.discord.DiscordIntegration;
 import de.crafty.snake.game.Extension;
 import de.crafty.snake.game.Food;
 import de.crafty.snake.game.Player;
@@ -60,6 +61,8 @@ public class SnakeGame {
     }
 
     public void run() {
+
+        DiscordIntegration.start();
 
         this.renderManager.setup();
 
@@ -122,6 +125,7 @@ public class SnakeGame {
     //Shutdown the application
     public void shutdown() {
         System.out.println("Shutting down...");
+        DiscordIntegration.shutdown();
         System.exit(0);
     }
 

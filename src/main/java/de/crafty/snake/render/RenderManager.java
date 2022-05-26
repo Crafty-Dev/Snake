@@ -2,22 +2,14 @@ package de.crafty.snake.render;
 
 import de.crafty.snake.SnakeGame;
 import de.crafty.snake.util.Keyboard;
-import org.lwjgl.BufferUtils;
 import org.lwjgl.Version;
 import org.lwjgl.glfw.GLFW;
 import org.lwjgl.glfw.GLFWVidMode;
 import org.lwjgl.opengl.GL;
 import org.lwjgl.opengl.GL11;
-import org.lwjgl.opengl.GLUtil;
-import org.lwjgl.stb.STBImage;
 import org.lwjgl.system.MemoryUtil;
 
-import javax.imageio.ImageIO;
 import java.awt.*;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
-import java.nio.ByteBuffer;
 
 public class RenderManager {
 
